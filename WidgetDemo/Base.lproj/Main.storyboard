@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WidgetDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Be-Nl-nmG">
+                                <rect key="frame" x="44" y="58" width="287" height="163"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqm-YH-csA">
+                                <rect key="frame" x="76" y="252" width="222" height="163"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="222" id="WFt-k8-Jqf"/>
+                                    <constraint firstAttribute="height" constant="163" id="qW4-UM-7sU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1Be-Nl-nmG" secondAttribute="trailing" constant="44" id="2Kt-GN-2jm"/>
+                            <constraint firstItem="1Be-Nl-nmG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="38" id="6Sc-Pe-dVM"/>
+                            <constraint firstItem="Jqm-YH-csA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KbI-bX-7Gz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Be-Nl-nmG" secondAttribute="bottom" constant="446" id="OCY-2b-PtG"/>
+                            <constraint firstItem="1Be-Nl-nmG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="44" id="QJf-bk-vjA"/>
+                            <constraint firstItem="Jqm-YH-csA" firstAttribute="top" secondItem="1Be-Nl-nmG" secondAttribute="bottom" constant="31" id="mRu-a3-EhM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="IBimgView" destination="1Be-Nl-nmG" id="HsZ-4g-q5Y"/>
+                        <outlet property="IBlblName" destination="Jqm-YH-csA" id="zL1-KC-lmu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="85.907046476761622"/>
+        </scene>
+    </scenes>
+</document>
